@@ -179,3 +179,7 @@ footer {
         display: none;
     }
 }
+
+#schemas li img{
+    margin-bottom:0px;
+}

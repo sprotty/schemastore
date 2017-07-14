@@ -1,4 +1,4 @@
-/* global ga, get */
+﻿/* global ga, get */
 
 (function (global) {
 
@@ -33,6 +33,13 @@
 
                 var schema = catalog.schemas[i];
                 var li = document.createElement("li");
+
+                var a = document.createElement("a");
+                a.href = 'http://schemas.liquid-technologies.com/json/' + schema.name + '/index.html';
+                a.title = 'Html Documentation';
+                a.innerHTML = '<img src="/img/Documentation.png" width="24" height="24"/>';
+                li.appendChild(a);
+
                 var a = document.createElement("a");
                 a.href = schema.url;
                 a.title = schema.description;
